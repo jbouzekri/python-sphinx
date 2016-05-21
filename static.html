@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>static page example &mdash; Python Sphinx Examples 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="Python Sphinx Examples 0.1 documentation" href="index.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+
+  </head>
+  <body role="document">
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="index.html">Python Sphinx Examples 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="static-page-example">
+<h1>static page example<a class="headerlink" href="#static-page-example" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This page is a static page linked from the home page.
+It displays a lot of the syntax of restructuredText.</p>
+<p>For the most part, it is a copy/paste from <a class="reference external" href="https://pythonhosted.org/an_example_pypi_project/sphinx.html">an example pypi project</a></p>
+<p>This covers just a few of the many many commands available via sphinx. For more, visit <a class="reference external" href="http://sphinx.pocoo.org/">http://sphinx.pocoo.org/</a>.</p>
+<p>Also, another great site with just an overview of more common commands is <a class="reference external" href="http://docs.geoserver.org/trunk/en/docguide/sphinx.html">http://docs.geoserver.org/trunk/en/docguide/sphinx.html</a>.</p>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx is built of reStructured text and, when using sphinx most of what you type is reStructured text.  Some great resources are below
+(and most examples are ripped out of these pages):</p>
+<ul class="simple">
+<li><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt">http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt</a></li>
+</ul>
+</div>
+<div class="section" id="bold-italics">
+<h2>Bold/Italics<a class="headerlink" href="#bold-italics" title="Permalink to this headline">¶</a></h2>
+<p>Bold and italics are done like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">bold</span><span class="o">**</span> <span class="ow">and</span> <span class="o">*</span><span class="n">italics</span><span class="o">*</span>
+</pre></div>
+</div>
+<p>which render like <strong>bold</strong> and <em>italics</em>.</p>
+</div>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>You can do:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">A</span> <span class="n">thing</span><span class="o">.</span>
+<span class="o">*</span> <span class="n">Another</span> <span class="n">thing</span><span class="o">.</span>
+
+<span class="ow">or</span>
+
+<span class="mf">1.</span> <span class="n">Item</span> <span class="mf">1.</span>
+<span class="mf">2.</span> <span class="n">Item</span> <span class="mf">2.</span>
+<span class="mf">3.</span> <span class="n">Item</span> <span class="mf">3.</span>
+
+<span class="ow">or</span>
+
+<span class="o">-</span> <span class="n">Some</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Thing</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Different</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>which render as:</p>
+<ul class="simple">
+<li>A thing.</li>
+<li>Another thing.</li>
+</ul>
+<p>or</p>
+<ol class="arabic simple">
+<li>Item 1.</li>
+<li>Item 2.</li>
+<li>Item 3.</li>
+</ol>
+<p>or</p>
+<ul class="simple">
+<li>Some.</li>
+<li>Thing.</li>
+<li>Different.</li>
+</ul>
+</div>
+<div class="section" id="headers">
+<h2>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h2>
+<p>It&#8217;s up to you to pick a convention for headers and just stick with it &#8211;
+Sphinx will pick up on your convention:</p>
+<p>You can do whatever header stragetgy you want, but I think a good one is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">H1</span> <span class="o">--</span> <span class="n">Top</span> <span class="n">of</span> <span class="n">Page</span> <span class="n">Header</span>
+<span class="o">************************</span>
+<span class="n">There</span> <span class="n">should</span> <span class="n">only</span> <span class="n">be</span> <span class="n">one</span> <span class="n">of</span> <span class="n">these</span> <span class="n">per</span> <span class="n">page</span> <span class="ow">and</span> <span class="n">this</span> <span class="n">will</span> <span class="n">also</span> <span class="o">--</span> <span class="n">when</span>
+<span class="n">converting</span> <span class="n">to</span> <span class="n">pdf</span> <span class="o">--</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">the</span> <span class="n">chapters</span><span class="o">.</span>
+
+<span class="n">H2</span> <span class="o">--</span> <span class="n">Page</span> <span class="n">Sections</span>
+<span class="o">===================</span>
+
+<span class="n">H3</span> <span class="o">--</span> <span class="n">Subsection</span>
+<span class="o">----------------</span>
+
+<span class="n">H4</span> <span class="o">--</span> <span class="n">Subsubsection</span>
+<span class="o">+++++++++++++++++++</span>
+</pre></div>
+</div>
+<p>So:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="n">Subpoint</span>
+<span class="o">----------</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">my</span> <span class="n">idea</span><span class="o">.</span>
+
+<span class="n">A</span> <span class="n">subsubpoint</span>
+<span class="o">+++++++++++++</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">smaller</span> <span class="n">idea</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Is rendered like this:</p>
+<div class="section" id="a-subpoint">
+<h3>A Subpoint<a class="headerlink" href="#a-subpoint" title="Permalink to this headline">¶</a></h3>
+<p>This is my idea.</p>
+<div class="section" id="a-subsubpoint">
+<h4>A subsubpoint<a class="headerlink" href="#a-subsubpoint" title="Permalink to this headline">¶</a></h4>
+<p>This is a smaller idea.</p>
+</div>
+</div>
+</div>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Basic tables are done like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">COMPLEX</span> <span class="n">TABLE</span><span class="p">:</span>
+
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">Header</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+============+============+===========+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">column</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">column</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span> <span class="n">span</span> <span class="n">columns</span><span class="o">.|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span>  <span class="o">|</span> <span class="o">-</span> <span class="n">Cells</span>   <span class="o">|</span>
+<span class="o">+------------+</span> <span class="n">span</span> <span class="n">rows</span><span class="o">.</span> <span class="o">|</span> <span class="o">-</span> <span class="n">contain</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">4</span> <span class="o">|</span>            <span class="o">|</span> <span class="o">-</span> <span class="n">blocks</span><span class="o">.</span> <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+
+<span class="n">SIMPLE</span> <span class="n">TABLE</span><span class="p">:</span>
+
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+   <span class="n">Inputs</span>     <span class="n">Output</span>
+<span class="o">------------</span>  <span class="o">------</span>
+  <span class="n">A</span>      <span class="n">B</span>    <span class="n">A</span> <span class="ow">or</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">True</span>
+<span class="kc">False</span>  <span class="kc">True</span>   <span class="kc">True</span>
+<span class="kc">True</span>   <span class="kc">True</span>   <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+</pre></div>
+</div>
+<p>Which render like this:</p>
+<p>COMPLEX TABLE:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="34%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header 1</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1</td>
+<td>column 2</td>
+<td>column 3</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="2">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td rowspan="2"><ul class="first last simple">
+<li>Cells</li>
+<li>contain</li>
+<li>blocks.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<p>SIMPLE TABLE:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Inputs</th>
+<th class="head">Output</th>
+</tr>
+<tr class="row-even"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="links">
+<h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
+<p>Urls are automatically linked, like <a class="reference external" href="http://packages.python.org/an_example_pypi_project/">http://packages.python.org/an_example_pypi_project/</a></p>
+<p>For other links, you basically use the <code class="docutils literal"><span class="pre">_</span></code> operator.</p>
+<p>To add a text with a hyperlink, I like using this format:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>`Docs for this project &lt;http://packages.python.org/an_example_pypi_project/&gt;`_
+</pre></div>
+</div>
+<p>which renders as <a class="reference external" href="http://packages.python.org/an_example_pypi_project/">Docs for this project</a>.</p>
+<p>To create an anchor link that jumps to another section in the
+same .rst file, use this syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>`Table of Contents`_
+</pre></div>
+</div>
+<p>Which renders like this: <a class="reference internal" href="#table-of-contents">Table of Contents</a></p>
+</div>
+<div class="section" id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>Images syntax is like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">figure</span><span class="p">::</span>  <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">placekitten</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="mi">300</span><span class="o">/</span><span class="mi">200</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span>   <span class="n">center</span>
+
+   <span class="n">Proof</span> <span class="n">that</span> <span class="n">getting</span> <span class="n">rich</span> <span class="ow">is</span> <span class="n">mostly</span> <span class="n">luck</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Which renders like this:</p>
+<div class="figure align-center" id="id1">
+<img alt="http://placekitten.com/300/200" src="http://placekitten.com/300/200" />
+<p class="caption"><span class="caption-text">Proof that getting rich is mostly luck.</span></p>
+</div>
+<p>You can also add an anchor point for an image like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_is_sweaty</span><span class="p">:</span>
+<span class="o">..</span> <span class="n">figure</span><span class="p">::</span>  <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">placekitten</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="mi">300</span><span class="o">/</span><span class="mi">200</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span>   <span class="n">center</span>
+
+   <span class="n">Proof</span> <span class="n">that</span> <span class="n">getting</span> <span class="n">rich</span> <span class="ow">is</span> <span class="n">mostly</span> <span class="n">luck</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Which renders like this:</p>
+<div class="figure align-center" id="id2">
+<span id="is-sweaty"></span><img alt="http://placekitten.com/300/200" src="http://placekitten.com/300/200" />
+<p class="caption"><span class="caption-text">Proof that getting rich is mostly luck.</span></p>
+</div>
+<p>Now you can reference this anchor like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">picture</span> <span class="n">is_sweaty_</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>which renders like this:</p>
+<p>This picture <a class="reference internal" href="#is-sweaty">is_sweaty</a>.</p>
+</div>
+<div class="section" id="documents">
+<h2>Documents<a class="headerlink" href="#documents" title="Permalink to this headline">¶</a></h2>
+<p>To download documents you use the syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>:download:`An Example Pypi Project&lt;docs/examplepypi.pdf&gt;`
+</pre></div>
+</div>
+<p>which renders like <code class="xref download docutils literal"><span class="pre">An</span> <span class="pre">Example</span> <span class="pre">Pypi</span> <span class="pre">Project</span></code>.</p>
+</div>
+<div class="section" id="substitutions">
+<h2>Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h2>
+<p>Substitutions syntax is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">biohazard</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">placekitten</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="mi">300</span><span class="o">/</span><span class="mi">200</span>
+
+<span class="n">The</span> <span class="o">|</span><span class="n">biohazard</span><span class="o">|</span> <span class="n">symbol</span> <span class="n">must</span> <span class="n">be</span> <span class="n">used</span> <span class="n">on</span> <span class="n">containers</span> <span class="n">used</span> <span class="n">to</span> <span class="n">dispose</span> <span class="n">of</span> <span class="n">medical</span> <span class="n">waste</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Or if you want to do a literal text replacement use:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>.. |doctest| replace:: :mod:`doctest`
+
+I really like |doctest|.
+</pre></div>
+</div>
+<p>Which renders like this:</p>
+<p>The <img alt="biohazard" src="http://placekitten.com/300/200" /> symbol must be used on containers used to dispose of medical waste.</p>
+<p>I really like <a class="reference external" href="https://docs.python.org/3.4/library/doctest.html#module-doctest" title="(in Python v3.4)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Substitutions are really useful, especially when put into a <code class="docutils literal"><span class="pre">global.rst</span></code>
+and included at the top of every file.  See <a class="reference internal" href="#includes">Includes</a> below for more.</p>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<p>The syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">include</span> <span class="n">myfile</span><span class="o">.</span><span class="n">rst</span>
+</pre></div>
+</div>
+<p>Will &#8216;inline&#8217; the given file.  A common convention I use is create a global
+.rst file called <code class="docutils literal"><span class="pre">global.rst</span></code> and include that at the top of every page.
+Very useful for links to common images or common files links, etc.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p>Using the syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+
+   <span class="n">setuptools</span>
+   <span class="n">buildanduploadsphinx</span>
+</pre></div>
+</div>
+<p>renders like this:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<p>where <code class="docutils literal"><span class="pre">setuptools</span></code>, <code class="docutils literal"><span class="pre">sphinx</span></code>, etc. correspond to <code class="docutils literal"><span class="pre">setuptools.rst</span></code> and
+<code class="docutils literal"><span class="pre">sphinx.rst</span></code> files in the local path.</p>
+</div>
+<div class="section" id="paragraph-markup">
+<h2>Paragraph Markup<a class="headerlink" href="#paragraph-markup" title="Permalink to this headline">¶</a></h2>
+<p>To bring attention to a section of text, use paragraphs level markups.</p>
+<p>Important constructs include:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">note</span><span class="p">::</span>
+
+<span class="o">..</span> <span class="n">warning</span><span class="p">::</span>
+
+<span class="o">..</span> <span class="n">versionadded</span><span class="p">::</span> <span class="n">version</span>
+
+<span class="o">..</span> <span class="n">versionchanged</span><span class="p">::</span> <span class="n">version</span>
+
+<span class="o">..</span> <span class="n">seealso</span><span class="p">::</span>
+</pre></div>
+</div>
+<p>The way you would use this is as follows:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>This is a statement.
+
+.. warning::
+
+   Never, ever, use this code!
+
+.. versionadded:: 0.0.1
+
+It&#39;s okay to use this code.
+</pre></div>
+</div>
+<p>Which would render like this:</p>
+<p>This is a statement.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Never, ever, use this code!</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.0.1.</span></p>
+</div>
+<p>Now it is okay to use this code.</p>
+<p>For full Sphinx docs on paragraph markup, check out
+<a class="reference external" href="http://sphinx.pocoo.org/markup/para.html">http://sphinx.pocoo.org/markup/para.html</a>.</p>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>Python code in sphinx is easy.  Because we turned <code class="xref py py-mod docutils literal"><span class="pre">pygments</span></code> on, all we
+need to do is use the <code class="docutils literal"><span class="pre">::</span></code> operator at the end of a line.  So:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Here</span> <span class="ow">is</span> <span class="n">something</span> <span class="n">I</span> <span class="n">want</span> <span class="n">to</span> <span class="n">talk</span> <span class="n">about</span><span class="p">::</span>
+
+    <span class="k">def</span> <span class="nf">my_fn</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A really useful function.</span>
+
+<span class="sd">        Returns None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Renders like this:</p>
+<p>Here is something I want to talk about:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_fn</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A really useful function.</span>
+
+<span class="sd">    Returns None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Also, you can add &#8220;inline&#8221; code by using the fixed-font operator.</p>
+<p>By using two <code class="docutils literal"><span class="pre">``</span></code> marks like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>This is inline ``if __name__ == &#39;__main__&#39;:``
+</pre></div>
+</div>
+<p>you get:</p>
+<p>This is inline <code class="docutils literal"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code></p>
+</div>
+<div class="section" id="python-cross-referencing-syntax">
+<h2>Python Cross Referencing Syntax<a class="headerlink" href="#python-cross-referencing-syntax" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx makes it easy to quickly link to other code definitions that
+<em>are in the python path</em> or can be found by <code class="xref py py-mod docutils literal"><span class="pre">intersphinx</span></code>.</p>
+<p>The major ones I use all the time are:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">:mod:</span></code></li>
+<li><code class="docutils literal"><span class="pre">:func:</span></code></li>
+<li><code class="docutils literal"><span class="pre">:class:</span></code></li>
+</ul>
+<p>Which is used like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>I really like the :mod:`threading` module which has the
+:class:`threading.Thread` class.
+
+Here is a link :func:`time.time`.
+</pre></div>
+</div>
+<p>which renders like this:</p>
+<p>I really like the <a class="reference external" href="https://docs.python.org/3.4/library/threading.html#module-threading" title="(in Python v3.4)"><code class="xref py py-mod docutils literal"><span class="pre">threading</span></code></a> module which has the
+<a class="reference external" href="https://docs.python.org/3.4/library/threading.html#threading.Thread" title="(in Python v3.4)"><code class="xref py py-class docutils literal"><span class="pre">threading.Thread</span></code></a> class.</p>
+<p>Here is a link <a class="reference external" href="https://docs.python.org/3.4/library/time.html#time.time" title="(in Python v3.4)"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a>.</p>
+<p>For more, visit <a class="reference external" href="http://sphinx.pocoo.org/markup/inline.html">http://sphinx.pocoo.org/markup/inline.html</a>.</p>
+</div>
+<div class="section" id="auto-directives">
+<h2>&#8216;Auto&#8217; Directives<a class="headerlink" href="#auto-directives" title="Permalink to this headline">¶</a></h2>
+<p>From the sphinx docs directly:</p>
+<p><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></code> &#8211; Include documentation from docstrings</p>
+<p>This extension can import the modules you are documenting, and pull in
+documentation from docstrings in a semi-automatic way.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For Sphinx (actually, the Python interpreter that executes Sphinx) to find
+your module, it must be importable.  That means that the module or the
+package must be in one of the directories on <a class="reference external" href="https://docs.python.org/3.4/library/sys.html#sys.path" title="(in Python v3.4)"><code class="xref py py-data docutils literal"><span class="pre">sys.path</span></code></a> &#8211; adapt your
+<a class="reference external" href="https://docs.python.org/3.4/library/sys.html#sys.path" title="(in Python v3.4)"><code class="xref py py-data docutils literal"><span class="pre">sys.path</span></code></a> in the configuration file accordingly.</p>
+</div>
+<p>For this to work, the docstrings must of course be written in correct
+reStructuredText.  You can then use all of the usual Sphinx markup in the
+docstrings, and it will end up correctly in the documentation.  Together with
+hand-written documentation, this technique eases the pain of having to maintain
+two locations for documentation, while at the same time avoiding
+auto-generated-looking pure API documentation.</p>
+<p>For more on autodoc see <a class="reference external" href="http://sphinx.pocoo.org/ext/autodoc.html">http://sphinx.pocoo.org/ext/autodoc.html</a>.</p>
+<p>The main autodoc features I use are:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">&lt;module_name&gt;</span></code></li>
+<li><code class="docutils literal"><span class="pre">..</span> <span class="pre">autoclass::</span> <span class="pre">&lt;class_name&gt;</span></code> and</li>
+<li><code class="docutils literal"><span class="pre">..</span> <span class="pre">autofunction::</span> <span class="pre">&lt;function_name&gt;</span></code></li>
+</ul>
+<p>The key to using these features is the <code class="docutils literal"><span class="pre">:members:</span></code> attribute.  If:</p>
+<ul class="simple">
+<li>You don&#8217;t include it at all, only the docstring for the object is brought in:</li>
+<li>You just use <code class="docutils literal"><span class="pre">:members:</span></code> with no arguments, then all public functions,
+classes, and methods are brought it that have docstring.</li>
+<li>If you explictly list the members like <code class="docutils literal"><span class="pre">:members:</span> <span class="pre">fn0,</span> <span class="pre">class0,</span> <span class="pre">_fn1</span></code>
+those explict members are brought.</li>
+</ul>
+</div>
+<div class="section" id="function-definitions">
+<h2>Function Definitions<a class="headerlink" href="#function-definitions" title="Permalink to this headline">¶</a></h2>
+<p>The sphinx syntax (taken from <a class="reference external" href="http://sphinx.pocoo.org/markup/desc.html">http://sphinx.pocoo.org/markup/desc.html</a>) looks like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">function</span><span class="p">::</span> <span class="n">format_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">[,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">])</span>
+
+   <span class="n">Format</span> <span class="n">the</span> <span class="n">exception</span> <span class="k">with</span> <span class="n">a</span> <span class="n">traceback</span><span class="o">.</span>
+
+   <span class="p">:</span><span class="n">param</span> <span class="n">etype</span><span class="p">:</span> <span class="n">exception</span> <span class="nb">type</span>
+   <span class="p">:</span><span class="n">param</span> <span class="n">value</span><span class="p">:</span> <span class="n">exception</span> <span class="n">value</span>
+   <span class="p">:</span><span class="n">param</span> <span class="n">tb</span><span class="p">:</span> <span class="n">traceback</span> <span class="nb">object</span>
+   <span class="p">:</span><span class="n">param</span> <span class="n">limit</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">number</span> <span class="n">of</span> <span class="n">stack</span> <span class="n">frames</span> <span class="n">to</span> <span class="n">show</span>
+   <span class="p">:</span><span class="nb">type</span> <span class="n">limit</span><span class="p">:</span> <span class="n">integer</span> <span class="ow">or</span> <span class="kc">None</span>
+   <span class="p">:</span><span class="n">rtype</span><span class="p">:</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">strings</span>
+</pre></div>
+</div>
+<p>which renders like this:</p>
+<dl class="function">
+<dt id="format_exception">
+<code class="descname">format_exception</code><span class="sig-paren">(</span><em>etype</em>, <em>value</em>, <em>tb</em><span class="optional">[</span>, <em>limit=None</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#format_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format the exception with a traceback.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>etype</strong> &#8211; exception type</li>
+<li><strong>value</strong> &#8211; exception value</li>
+<li><strong>tb</strong> &#8211; traceback object</li>
+<li><strong>limit</strong> (<em>integer or None</em>) &#8211; maximum number of stack frames to show</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list of strings</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">static page example</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#bold-italics">Bold/Italics</a></li>
+<li><a class="reference internal" href="#lists">Lists</a></li>
+<li><a class="reference internal" href="#headers">Headers</a><ul>
+<li><a class="reference internal" href="#a-subpoint">A Subpoint</a><ul>
+<li><a class="reference internal" href="#a-subsubpoint">A subsubpoint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#links">Links</a></li>
+<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#documents">Documents</a></li>
+<li><a class="reference internal" href="#substitutions">Substitutions</a></li>
+<li><a class="reference internal" href="#includes">Includes</a></li>
+<li><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li><a class="reference internal" href="#paragraph-markup">Paragraph Markup</a></li>
+<li><a class="reference internal" href="#code">Code</a></li>
+<li><a class="reference internal" href="#python-cross-referencing-syntax">Python Cross Referencing Syntax</a></li>
+<li><a class="reference internal" href="#auto-directives">&#8216;Auto&#8217; Directives</a></li>
+<li><a class="reference internal" href="#function-definitions">Function Definitions</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/static.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Jonathan Bouzekri.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
+    </div>
+  </body>
+</html>
