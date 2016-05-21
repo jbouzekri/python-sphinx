@@ -107,8 +107,6 @@ class MyClass(object):
             class MyEmbeddedCode(object):
                 pass
 
-        :Example:
-
         >>> import template
         >>> a = template.MainClass1()
         >>> a.function1(1,1,1)
