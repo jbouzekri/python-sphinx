@@ -1,6 +1,8 @@
 # python-sphinx
 
-Examples to have a quick reminder on how to use sphinx in a python project
+Examples to have a quick reminder on how to use sphinx in a python project.
+
+Generated doc available on [github pages](http://jbouzekri.github.io/python-sphinx/)
 
 ## Installation
 
